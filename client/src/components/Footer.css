@@ -1,0 +1,35 @@
+.footer {
+  margin-top: 60px;
+  padding: 30px 20px;
+
+  text-align: center;
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(5, 8, 22, 0.95),
+      rgba(15, 23, 42, 0.95)
+    );
+
+  border-top: 1px solid rgba(96, 165, 250, 0.2);
+
+  box-shadow:
+    0 -8px 30px rgba(0, 0, 0, 0.2);
+
+  color: #94a3b8;
+}
+
+.footer p {
+  margin: 6px 0;
+  line-height: 1.5;
+}
+
+.footer p:first-child {
+  color: #cbd5e1;
+  font-weight: 600;
+}
+
+.footer p:last-child {
+  color: #64748b;
+  font-size: 14px;
+}

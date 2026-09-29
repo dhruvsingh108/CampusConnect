@@ -1,0 +1,46 @@
+.event-card {
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.06);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.event-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+}
+
+.event-card h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.event-card p {
+  color: #555;
+  line-height: 1.5;
+}
+
+.event-card .event-date {
+  font-size: 14px;
+  font-weight: 500;
+  color: #444;
+  margin-top: 15px;
+}
+
+.event-card button {
+  margin-top: 10px;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 7px;
+  background: #222;
+  color: white;
+  font-size: 14px;
+  transition: opacity 0.2s ease;
+}
+
+.event-card button:hover {
+  opacity: 0.8;
+}
