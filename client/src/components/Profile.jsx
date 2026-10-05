@@ -26,7 +26,7 @@ function Profile() {
       Authorization: `Bearer ${token}`,
     };
 
-    fetch(`http://localhost:5000/api/users/${currentUser.id}`, {
+    fetch(`https://campusconnect-dvj.onrender.com/api/users/${currentUser.id}`, {
       headers,
     })
       .then((response) => {
@@ -46,7 +46,7 @@ function Profile() {
       });
 
     fetch(
-      `http://localhost:5000/api/users/${currentUser.id}/events`,
+      `https://campusconnect-dvj.onrender.com/api/users/${currentUser.id}/events`,
       {
         headers,
       }
@@ -57,7 +57,7 @@ function Profile() {
       });
 
     fetch(
-      `http://localhost:5000/api/users/${currentUser.id}/clubs`,
+      `https://campusconnect-dvj.onrender.com/api/users/${currentUser.id}/clubs`,
       {
         headers,
       }

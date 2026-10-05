@@ -37,7 +37,7 @@ function App() {
         setError("");
 
         const backendResponse = await fetch(
-          "http://localhost:5000/"
+          "https://campusconnect-dvj.onrender.com/"
         );
 
         if (!backendResponse.ok) {
@@ -48,7 +48,7 @@ function App() {
         setMessage(backendMessage);
 
         const eventsResponse = await fetch(
-          "http://localhost:5000/api/events"
+          "https://campusconnect-dvj.onrender.com/api/events"
         );
 
         if (!eventsResponse.ok) {
@@ -59,7 +59,7 @@ function App() {
         setEvents(eventsData);
 
         const announcementsResponse = await fetch(
-          "http://localhost:5000/api/announcements"
+          "https://campusconnect-dvj.onrender.com/api/announcements"
         );
 
         if (!announcementsResponse.ok) {
@@ -72,7 +72,7 @@ function App() {
         setAnnouncements(announcementsData);
 
         const statsResponse = await fetch(
-          "http://localhost:5000/api/stats"
+          "https://campusconnect-dvj.onrender.com/api/stats"
         );
 
         if (!statsResponse.ok) {

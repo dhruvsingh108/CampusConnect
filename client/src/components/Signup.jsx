@@ -38,7 +38,7 @@ function Signup() {
 
     try {
       const response = await fetch(
-        "http://localhost:5000/api/signup",
+        "https://campusconnect-dvj.onrender.com/api/signup",
         {
           method: "POST",
           headers: {

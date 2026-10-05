@@ -15,7 +15,7 @@ function ClubDetails() {
   const [registerError, setRegisterError] = useState("");
 
   useEffect(() => {
-    fetch(`http://localhost:5000/api/clubs/${id}`)
+    fetch(`https://campusconnect-dvj.onrender.com/api/clubs/${id}`)
       .then((response) => response.json())
       .then((data) => {
         setClub(data);
@@ -42,7 +42,7 @@ function ClubDetails() {
 
     try {
       const response = await fetch(
-        `http://localhost:5000/api/clubs/${id}/register`,
+        `https://campusconnect-dvj.onrender.com/api/clubs/${id}/register`,
         {
           method: "POST",
           headers: {

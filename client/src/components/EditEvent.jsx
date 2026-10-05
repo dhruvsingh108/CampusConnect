@@ -18,7 +18,7 @@ function EditEvent() {
     const loadEvent = async () => {
       try {
         const response = await fetch(
-          `http://localhost:5000/api/events/${id}`
+          `https://campusconnect-dvj.onrender.com/api/events/${id}`
         );
 
         if (!response.ok) {
@@ -55,7 +55,7 @@ function EditEvent() {
 
     try {
       const response = await fetch(
-        `http://localhost:5000/api/events/${id}`,
+        `https://campusconnect-dvj.onrender.com/api/events/${id}`,
         {
           method: "PUT",
           headers: {

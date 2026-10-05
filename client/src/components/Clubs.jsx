@@ -7,7 +7,7 @@ function Clubs() {
   const navigate = useNavigate();
 
   useEffect(() => {
-    fetch("http://localhost:5000/api/clubs")
+    fetch("https://campusconnect-dvj.onrender.com/api/clubs")
       .then((response) => response.json())
       .then((data) => {
         setClubs(data);

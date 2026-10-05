@@ -17,7 +17,7 @@ function EventDetails() {
   const [deleting, setDeleting] = useState(false);
 
   useEffect(() => {
-    fetch(`http://localhost:5000/api/events/${id}`)
+    fetch(`https://campusconnect-dvj.onrender.com/api/events/${id}`)
       .then((response) => response.json())
       .then((data) => {
         setEvent(data);
@@ -37,7 +37,7 @@ function EventDetails() {
 
     try {
       const response = await fetch(
-        `http://localhost:5000/api/events/${id}`,
+        `https://campusconnect-dvj.onrender.com/api/events/${id}`,
         {
           method: "DELETE",
         }
@@ -76,7 +76,7 @@ function EventDetails() {
 
     try {
       const response = await fetch(
-        `http://localhost:5000/api/events/${id}/register`,
+        `https://campusconnect-dvj.onrender.com/api/events/${id}/register`,
         {
           method: "POST",
           headers: {
